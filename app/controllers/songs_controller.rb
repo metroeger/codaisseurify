@@ -1,9 +1,6 @@
 class SongsController < ApplicationController
     before_action :load_artist
-    
-    def index
-        @songs = artist.songs
-    end
+
 
     def show; end
 
