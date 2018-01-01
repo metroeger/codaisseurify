@@ -25,4 +25,6 @@ RSpec.describe Artist, type: :model do
       expect(artist.errors).to have_key(:name)
     end
   end
+
+   it { is_expected.to have_many :songs }
 end

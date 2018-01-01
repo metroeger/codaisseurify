@@ -1,0 +1,18 @@
+
+<h2><strong><%= @artist.name %> <strong> <h2>
+
+<% if @artist.songs.any? %>
+<% @artist.songs.each do |song| %>
+    <div class="row">
+      <div class="col-md-6">
+        <ul id="songlist">
+        <li id="<%song.id%>"><h4><%=song.title%></h4>
+          <h6><%=link_to "Delete song", song_path(song.id), method: :delete, data: {confirm: "You sure?"}%></h6></li>
+      </ul>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
+
+    <h4><%=link_to "[Add new song]", new_song_path(@artist.id)%>
+    <%=link_to "[Delete artist]", artist_path(@artist.id), method: :delete, data: { confirm: "You sure?" } %></h4>
