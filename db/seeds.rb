@@ -46,3 +46,10 @@ song23 = Song.create!(title: "Loosing my religion", artist: rem)
 song24 = Song.create!(title: "Happy people", artist: rem)
 
 song25 = Song.create!(title: "Feel it still", artist: portugal_the_man)
+
+Photo.create!(artist: manu_chao, image: "https://houselistbowerypresents.ticketfly.com/files/2011/09/9134_manu-chao-500x375.jpg")
+Photo.create!(artist: nina_simone, image: "https://cdn-img.essence.com/sites/default/files/styles/3x2_lg/public/images/2016/03/14/nina-simone-gettyimages-74314643_master.jpg?itok=4oL0H84Q")
+Photo.create!(artist: rem, image: "http://blastecho.com/wp-content/uploads/2016/06/rem_1992.jpg")
+Photo.create!(artist: mishka, image: "http://cdn1.brandwiki.today/sites/14/2016/01/Mishka_2.jpg")
+Photo.create!(artist: portugal_the_man, image: "http://www.themarooncafe.com/wp-content/uploads/2015/06/Portugal-The-Man1.jpg")
+Photo.create!(artist: wild_belle, image: "http://lightning100.com/wp-content/uploads/2016/02/130624-Wild-Belle.jpg")

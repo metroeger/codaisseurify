@@ -7,7 +7,7 @@ class ArtistsController < ApplicationController
   def show
     @artist = Artist.find(params[:id])
     @songs = @artist.songs.all
-
+    @photos = @artist.photo
   end
 
   def update; end
